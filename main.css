@@ -1,0 +1,160 @@
+/*  GENERAL STUFF  */
+
+body {
+    margin: 0;
+    font-family: "Lato", "LatoBold", Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 1.20rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+
+/*  HEADER STUFF  */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: -4px -4px 8px black;
+    height: 3.5rem;
+}
+
+header > div > nav > ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+header > div > nav > ul > li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+header > div > nav:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header > div > nav:nth-child(2) > a > div {
+    background-color: darkblue;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+header > div:nth-child(2) > nav > ul > li:nth-child(2) {
+    border-bottom: 2px solid black;
+}
+
+header > div:nth-child(1) {
+    background-color: white;
+    z-index: 1;
+}
+
+header > div:nth-child(2) {
+    background-color: whitesmoke;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - -  CONTENT - - - - - - - - - - - - - - - - - - */
+
+/*  Plans  */
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#plans > a > div { /* Post */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #424242;
+}
+
+#plans > a > div > div { /* Text of post */
+    display: flex;
+    flex-direction: column;
+}
+
+#plans > a > div > img {
+    width: 11rem;
+    height: 8rem;
+    margin-right: 1.5rem;
+    border-radius: 4px;
+}
+
+#plans > a > div > div > div { /* Title and tag */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+#plans > a > div > div > div > h4 {
+    background-color: #fcbbbb;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+#plans > a > div > div > p {
+    margin-top: 0;
+}
+
+#plans > a > div {
+    margin-bottom: 0.7rem;
+}
+
+
+
+/*  Posts  */
+
+#posts > div {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #424242;
+    padding: 1.5rem;
+}
